@@ -19,7 +19,7 @@ public class LambdaEx {
     public static void main(String[] args) {
         List<Employee> list = addEmployees();
 
-        Stream<Employee> str = list.stream().filter(e-> e.getEmpsalary() > 30000).sorted((Employee e1, Employee e2)-> e1.getEmpage() - e2.getEmpage());
+        Stream<Employee> str = list.stream().filter(e-> e.getEmpsalary() > 100000).sorted((Employee e1, Employee e2)-> e1.getEmpage() - e2.getEmpage());
         str.forEach(System.out::println);
     }
 }
